@@ -3,6 +3,11 @@ body {
   margin: 0;
 }
 
+.title {
+  display: flex;
+  justify-content: center;
+}
+
 /*/////////////////////////////////////////////////
 /                     NAVBAR                     /
 ///////////////////////////////////////////////*/
@@ -16,6 +21,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  margin: 0;
 }
 
 li {
@@ -31,8 +37,17 @@ li {
 .container-img {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .container-img img {
   padding: 0.5em;
+}
+
+.carousel {
+  min-height: 500px;
+  background-image: url("http://placehold.it/2000x500");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1em;
 }
