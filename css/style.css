@@ -9,12 +9,40 @@ body {
 }
 
 /*/////////////////////////////////////////////////
+/                  MAIN HEADER                   /
+///////////////////////////////////////////////*/
+
+.main-header {
+  background: #517fa4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #243949, #517fa4); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #243949, #517fa4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 3em;
+  color: white;
+}
+
+.main-header p {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+}
+
+/*/////////////////////////////////////////////////
 /                     NAVBAR                     /
 ///////////////////////////////////////////////*/
 
 .navbar {
   height: 4em;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+  font-weight: 300;
 }
 
 .navbar a {
@@ -47,14 +75,6 @@ li {
 
 .container-img img {
   padding: 0.5em;
-}
-
-.carousel {
-  min-height: 500px;
-  background-image: url("http://placehold.it/2000x500");
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 1em;
 }
 
 /*/////////////////////////////////////////////////
